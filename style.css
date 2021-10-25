@@ -12,6 +12,7 @@ div{
     max-height: 250px;
     max-width: 90%;
     justify-content: center;
+    margin: 5px auto;
 }
     .general_info{
         margin: 2px;
@@ -19,16 +20,22 @@ div{
         min-height: auto;
         max-height: auto;
     }
+        .info_parag{
+
+        }
     .photoDiv{
         position: relative;
         display: flex;
-
+        justify-content: center;
         margin: 2px;
-        min-width: 50%;
+        min-width: 197px;
+        max-width: fit-content;
         min-height: auto;
-        max-height: auto;
+        max-height: fit-content;
     }
         .my_photo{
             position: relative;
             border-radius: 15%;
+            min-width: 197px;
+            max-height: 197px;
         }

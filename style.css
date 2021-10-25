@@ -8,8 +8,8 @@ body{
     border-width: 1px;
     border-style: dotted;
 }*/
-
-/*Individual styles*/
+/*##############################################################################*/
+/*Header section. it's a large div that contains other two divs*/
 .header{
     position: relative;
     top: 15px;
@@ -22,6 +22,7 @@ body{
     border-radius: 25px;
     box-shadow:0px 4px 15px 3px rgb(143, 143, 143)
 }
+    /*this is the div to the left. it contains the general info paragraph*/
     .general_info{
         margin: 2px;
         min-width: 50%;
@@ -30,6 +31,7 @@ body{
         overflow-y: scroll;
         scrollbar-width: none;
     }
+    /*piece of code to hide the scrollbar when the overflow-y comes into action because the window shrinks*/
     .general_info::-webkit-scrollbar{
         display: none;
     }
@@ -39,6 +41,8 @@ body{
             margin-right: 15px;
             margin-left: 15px;
         }
+    
+    /*this is the div to the right. it only contains the picture*/
     .photoDiv{
         position: relative;
         display: flex;
@@ -55,3 +59,5 @@ body{
             min-width: 197px;
             max-height: 197px;
         }
+/*##############################################################################*/
+

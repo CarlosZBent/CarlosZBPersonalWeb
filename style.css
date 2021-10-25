@@ -35,6 +35,7 @@ body{
     }
         .infoParag{
             display: inline-block;
+            text-align: justify;
             margin-right: 15px;
             margin-left: 15px;
         }

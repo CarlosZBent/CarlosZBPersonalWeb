@@ -1,27 +1,42 @@
 /*Global style*/
-div{
+body{
+    font-family: Consolas, 'Times New Roman', Calibri, sans-serif;
+    font-weight: lighter;
+}
+/*div{
     border-color: black;
     border-width: 1px;
     border-style: dotted;
-}
+}*/
 
 /*Individual styles*/
 .header{
-    position: absolute;
+    position: relative;
+    top: 15px;
     display: flex;
-    max-height: 250px;
+    max-height: 200px;
     max-width: 90%;
     justify-content: center;
     margin: 5px auto;
+    padding: 15px;
+    border-radius: 25px;
+    box-shadow:0px 4px 15px 3px rgb(143, 143, 143)
 }
     .general_info{
         margin: 2px;
         min-width: 50%;
         min-height: auto;
         max-height: auto;
+        overflow-y: scroll;
+        scrollbar-width: none;
     }
-        .info_parag{
-
+    .general_info::-webkit-scrollbar{
+        display: none;
+    }
+        .infoParag{
+            display: inline-block;
+            margin-right: 15px;
+            margin-left: 15px;
         }
     .photoDiv{
         position: relative;

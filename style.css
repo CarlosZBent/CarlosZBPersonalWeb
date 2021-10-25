@@ -4,3 +4,31 @@ div{
     border-width: 1px;
     border-style: dotted;
 }
+
+/*Individual styles*/
+.header{
+    position: absolute;
+    display: flex;
+    max-height: 250px;
+    max-width: 90%;
+    justify-content: center;
+}
+    .general_info{
+        margin: 2px;
+        min-width: 50%;
+        min-height: auto;
+        max-height: auto;
+    }
+    .photoDiv{
+        position: relative;
+        display: flex;
+
+        margin: 2px;
+        min-width: 50%;
+        min-height: auto;
+        max-height: auto;
+    }
+        .my_photo{
+            position: relative;
+            border-radius: 15%;
+        }

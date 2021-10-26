@@ -40,6 +40,9 @@ body{
             text-align: justify;
             margin-right: 15px;
             margin-left: 15px;
+            background-color: rgb(250, 227, 227);
+            padding: 10px;
+            border-radius: 10px;
         }
     
     /*this is the div to the right. it only contains the picture*/

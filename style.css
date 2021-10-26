@@ -26,7 +26,7 @@ body{
     box-shadow:0px 4px 15px 3px rgb(143, 143, 143)
 }
 .header::-webkit-scrollbar{display: none;}
-    /*this is the div to the left. it contains the general info paragraph*/
+    /*this is the div to the right. it contains the general info paragraph*/
     .general_info{
         margin: 2px;
         min-width: 50%;
@@ -43,6 +43,7 @@ body{
         .infoParag{
             display: inline-block;
             text-align: justify;
+            min-width: 196px;
             margin-right: 15px;
             margin-left: 15px;
             background-color: rgb(250, 227, 227);
@@ -50,11 +51,12 @@ body{
             border-radius: 10px;
         }
     
-    /*this is the div to the right. it only contains the picture*/
+    /*this is the div to the left. it only contains the picture*/
     .photoDiv{
         position: relative;
         display: flex;
         justify-content: center;
+        align-items: center;
         margin: 2px;
         min-width: 197px;
         max-width: fit-content;
@@ -64,8 +66,8 @@ body{
         .my_photo{
             position: relative;
             border-radius: 15%;
-            min-width: 197px;
-            max-height: 197px;
+            min-width: 157px;
+            max-height: 157px;
         }
 /*##############################################################################*/
 
@@ -102,5 +104,8 @@ body{
         margin-left: 15px;
         background-color: rgb(250, 227, 227);
         padding: 10px;
+        overflow-y: scroll;
         border-radius: 10px;
+        scrollbar-width: none;
     }
+    .present_work p::-webkit-scrollbar{display: none;}

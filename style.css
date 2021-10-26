@@ -1,6 +1,6 @@
 /*Global style*/
 body{
-    font-family: Consolas, 'Times New Roman', Calibri, sans-serif;
+    font-family: Ebrima, Consolas, 'Times New Roman', Calibri, sans-serif;
 }
 /*div{
     border-color: black;
@@ -11,7 +11,7 @@ body{
 /*Header section. it's a large div that contains other two divs*/
 .header{
     position: relative;
-    top: 15px;
+    top: 25px;
     display: flex;
     flex-wrap: wrap;
     align-items: stretch;
@@ -43,7 +43,7 @@ body{
         .infoParag{
             display: inline-block;
             text-align: justify;
-            min-width: 196px;
+            min-width: auto;
             margin-right: 15px;
             margin-left: 15px;
             background-color: rgb(250, 227, 227);
@@ -78,7 +78,7 @@ body{
     max-height: 144px;
     max-width: 90%;
     justify-content: center;
-    margin: 45px auto;
+    margin: 65px auto;
     padding: 15px;
     border-radius: 25px;
     box-shadow:0px 4px 15px 3px rgb(143, 143, 143);
@@ -91,8 +91,7 @@ body{
     display: none;
 }
     .present_work p a{
-        font-weight: bold;
-        text-decoration: none;
+        text-decoration: none; /*this is just to take the underline out of the link*/
     }
     .present_work p{
         display: inline-block;
@@ -109,3 +108,4 @@ body{
         scrollbar-width: none;
     }
     .present_work p::-webkit-scrollbar{display: none;}
+/*##############################################################################*/

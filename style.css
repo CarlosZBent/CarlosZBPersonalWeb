@@ -8,6 +8,17 @@ body{
     border-style: dotted;
 }*/
 /*##############################################################################*/
+
+.sticky_banner{ /*banner with some socialnet options*/
+    position: sticky;
+    height: 25px;
+    top: 0px;
+    background-color: rgba(248, 191, 191, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+    z-index: 1;
+}
+
 /*Header section. it's a large div that contains other two divs*/
 .header{
     position: relative;
@@ -110,7 +121,8 @@ body{
     .present_work p::-webkit-scrollbar{display: none;}
 /*##############################################################################*/
 
-.top_squares{ /*this div is invisible ant serves just as a container for it's two children divs*/
+/*section for the squares that contain the more specific information*/
+.top_squares{
     border: 1px dashed black;
     position: relative;
     margin: 25px auto;
@@ -130,3 +142,26 @@ body{
         margin: 25px 15px;
         padding: 15px;
     }
+
+/*section for the two bottom squares*/
+.bottom_squares{
+    border: 1px dashed red;
+    position: relative;
+    margin: 25px auto;
+    max-width: 90%;
+    min-width: auto;
+    max-height: fit-content;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+    .bottom_squares div{
+        border: 1px solid red;
+        height: 500px;
+        width: 25%;
+        max-width: 50%;
+        min-width: 35%;
+        margin: 25px 15px;
+        padding: 15px;
+    }
+/*footer section*/

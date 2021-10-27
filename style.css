@@ -165,3 +165,7 @@ body{
         padding: 15px;
     }
 /*footer section*/
+footer{
+    height: 175px;
+    background-color: rgb(44, 46, 48);
+}

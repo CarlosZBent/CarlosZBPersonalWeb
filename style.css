@@ -1,25 +1,22 @@
 /*Global style*/
 body{
-    font-family: Ebrima, Consolas, 'Times New Roman', Calibri, sans-serif;
+    font-family: Ebrima, Calibri ,Consolas, 'Times New Roman', Calibri, sans-serif;
 }
-/*div{
-    border-color: black;
-    border-width: 1px;
-    border-style: dotted;
-}*/
 /*##############################################################################*/
 
-.sticky_banner{ /*banner with some socialnet options*/
+.sticky_banner{ /*banner with some options that the user can see all the time while scrolling*/
     position: sticky;
     height: 25px;
+    max-width: 90%;
+    margin: 5px auto;
     top: 0px;
-    background-color: rgba(248, 191, 191, 0.5);
+    background-color: rgba(248, 191, 191, 0.3);
     padding: 10px;
     border-radius: 10px;
     z-index: 1;
 }
 
-/*Header section. it's a large div that contains other two divs*/
+/*Header section. It's a large div that contains other two divs*/
 .header{
     position: relative;
     top: 25px;
@@ -36,7 +33,9 @@ body{
     border-radius: 25px;
     box-shadow:0px 4px 15px 3px rgb(143, 143, 143)
 }
-.header::-webkit-scrollbar{display: none;}
+.header::-webkit-scrollbar{
+    display: none;
+}
     /*this is the div to the right. it contains the general info paragraph*/
     .general_info{
         margin: 2px;
@@ -102,7 +101,7 @@ body{
     display: none;
 }
     .present_work p a{
-        text-decoration: none; /*this is just to take the underline out of the link*/
+        text-decoration: none; /*this is just to hide the link's underline*/
     }
     .present_work p{
         display: inline-block;
@@ -121,7 +120,7 @@ body{
     .present_work p::-webkit-scrollbar{display: none;}
 /*##############################################################################*/
 
-/*section for the squares that contain the more specific information*/
+/*section for the top two squares that contain the more specific information*/
 .top_squares{
     border: 1px dashed black;
     position: relative;
@@ -143,7 +142,7 @@ body{
         padding: 15px;
     }
 
-/*section for the two bottom squares*/
+/*section for the two specific info bottom squares*/
 .bottom_squares{
     border: 1px dashed red;
     position: relative;

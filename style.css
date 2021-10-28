@@ -10,7 +10,7 @@ body{
     max-width: 90%;
     margin: 5px auto;
     top: 0px;
-    background-color: rgba(248, 191, 191, 0.3);
+    background-color: rgba(248, 191, 191, 0.6);
     padding: 10px;
     border-radius: 10px;
     z-index: 1;
@@ -122,7 +122,7 @@ body{
 
 /*section for the top two squares that contain the more specific information*/
 .top_squares{
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
     position: relative;
     margin: 25px auto;
     max-width: 90%;
@@ -131,20 +131,29 @@ body{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    background-color: #ab3058;
+    border-radius: 20px;
+    padding: 15px;
+    box-shadow:0px 4px 15px 3px rgb(143, 143, 143);
 }
     .top_squares div{
-        border: 1px solid black;
+        /*border: 1px solid black;*/
+        -webkit-filter: blur(2px);
+        filter: blur(2px);
+        opacity: 0.3;
         height: 500px;
         width: 25%;
         max-width: 50%;
         min-width: 35%;
         margin: 25px 15px;
         padding: 15px;
+        background-color: white;
+        border-radius: 20px;
     }
 
 /*section for the two specific info bottom squares*/
 .bottom_squares{
-    border: 1px dashed red;
+    /* border: 1px dashed red; */
     position: relative;
     margin: 25px auto;
     max-width: 90%;
@@ -153,15 +162,24 @@ body{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    background-color: #0c95bb;
+    border-radius: 20px;
+    padding: 15px;
+    box-shadow:0px 4px 15px 3px rgb(143, 143, 143);
 }
     .bottom_squares div{
-        border: 1px solid red;
+        /* border: 1px solid red; */
+        -webkit-filter: blur(2px);
+        filter: blur(2px);
+        opacity: 0.5;
         height: 500px;
         width: 25%;
         max-width: 50%;
         min-width: 35%;
         margin: 25px 15px;
         padding: 15px;
+        background-color: white;
+        border-radius: 25px;
     }
 /*footer section*/
 footer{

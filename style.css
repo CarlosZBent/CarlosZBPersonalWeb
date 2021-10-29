@@ -7,7 +7,7 @@ body{
 .sticky_banner{ /*banner with some options that the user can see all the time while scrolling*/
     position: sticky;
     height: 25px;
-    max-width: 90%;
+    max-width: 60%;
     margin: 5px auto;
     top: 0px;
     background-color: rgba(248, 191, 191, 0.6);
@@ -24,7 +24,7 @@ body{
     flex-wrap: wrap;
     align-items: stretch;
     max-height: 200px;
-    max-width: 90%;
+    max-width: 60%;
     overflow-y: auto;
     scrollbar-width: none;
     justify-content: center;
@@ -86,7 +86,7 @@ body{
     position: relative;
     display: flex;
     max-height: 144px;
-    max-width: 90%;
+    max-width: 60%;
     justify-content: center;
     margin: 65px auto;
     padding: 15px;
@@ -124,7 +124,7 @@ body{
 .top_squares{
     position: relative;
     margin: 25px auto;
-    max-width: 90%;
+    max-width: 65%;
     min-width: auto;
     max-height: fit-content;
     display: flex;
@@ -156,7 +156,7 @@ body{
             border-radius: 8px;
             text-align: center;
         }
-        .skills{
+        .top_squares ul{
             background-color: rgb(250, 227, 227);
             margin-top: 20px;
             padding-top: 15px;
@@ -169,7 +169,7 @@ body{
 .bottom_squares{
     position: relative;
     margin: 25px auto;
-    max-width: 90%;
+    max-width: 65%;
     min-width: auto;
     max-height: fit-content;
     display: flex;
@@ -186,7 +186,7 @@ body{
         max-width: 50%;
         min-width: 35%;
         margin: 25px 15px;
-        padding: 15px;
+        padding: 35px;
         background-color: white;
         border-radius: 20px;
         overflow-y: scroll;
@@ -201,16 +201,29 @@ body{
             border-radius: 8px;
             text-align: center;
         }
-        .character{
+        .bottom_squares ul{
             background-color: rgb(250, 227, 227);
             margin-top: 20px;
             padding-top: 15px;
             text-align: center;
             border-radius: 20px;
-            list-style-type: none;
+            list-style-type: none ;
+        }
+        .bottom_squares li{
+            margin-right: 35px;
         }
 /*footer section*/
 footer{
     height: 175px;
     background-color: rgb(44, 46, 48);
+    overflow-y: scroll;
 }
+    footer h3{
+        text-align: center;
+    }
+
+    .footer_list li{
+        color: rgb(250, 227, 227);
+        display: inline;
+        padding: 25px;
+    }

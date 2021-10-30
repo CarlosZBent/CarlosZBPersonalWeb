@@ -228,3 +228,7 @@ footer{
         display: inline-block;
         padding: 10px;
     }
+        .footer_list a{
+            text-decoration: underline;
+            color: rgb(250, 227, 227);
+        }

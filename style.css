@@ -71,6 +71,8 @@ body{
             display: inline-block;
             text-align: justify;
             min-width: auto;
+            min-height: auto;
+            max-height: fit-content;
             margin-right: 15px;
             margin-left: 15px;
             background-color: rgb(250, 227, 227);

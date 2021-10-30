@@ -1,4 +1,4 @@
-/*Global style*/
+/*Global styles*/
 body{
     font-family: Ebrima, Calibri ,Consolas, 'Times New Roman', Calibri, sans-serif;
 }
@@ -16,13 +16,13 @@ body{
     border-radius: 10px;
     overflow-x: auto;
     scrollbar-width: none;
-    z-index: 1;
+    z-index: 1; /*to allow the banner to go over any other element*/
     display: flex;
     justify-content: space-evenly;
     flex-wrap: nowrap;
 }
-.sticky_banner::-webkit-scrollbar{
-    display: none; 
+.sticky_banner::-webkit-scrollbar{ /*hides the scrollbar*/
+    display: none;  
 }
     .sticky_banner img{
         display: inline-block;
@@ -32,9 +32,7 @@ body{
     .sticky_banner img a{
         text-decoration: none;   
     }
-
-/*Header section. It's a large div that contains other two divs*/
-.header{
+.header{ /*Header section. It's a large div that contains other two divs*/
     position: relative;
     top: 25px;
     display: flex;
@@ -48,13 +46,12 @@ body{
     margin: 5px auto;
     padding: 15px;
     border-radius: 25px;
-    box-shadow:0px 4px 15px 3px rgb(143, 143, 143)
+    box-shadow:0px 2px 12px 2px rgb(143, 143, 143)
 }
-.header::-webkit-scrollbar{
+.header::-webkit-scrollbar{ /*hides the scrollbar*/
     display: none;
 }
-    /*this is the div to the right. it contains the general info paragraph*/
-    .general_info{
+    .general_info{ /*this is the div to the right. it contains the general info paragraph*/
         margin: 2px;
         min-width: 50%;
         min-height: auto;
@@ -63,8 +60,7 @@ body{
         overflow-y: scroll;
         scrollbar-width: none;
     }
-    /*piece of code to hide the scrollbar when the overflow-y comes into action because the window shrinks*/
-    .general_info::-webkit-scrollbar{
+    .general_info::-webkit-scrollbar{ /*hides the scrollbar*/
         display: none;
     }
         .infoParag{
@@ -79,9 +75,8 @@ body{
             padding: 10px;
             border-radius: 10px;
         }
-    
-    /*this is the div to the left. it only contains the picture*/
-    .photoDiv{
+
+    .photoDiv{ /*this is the div to the left. it only contains the picture*/
         position: relative;
         display: flex;
         justify-content: center;
@@ -110,7 +105,7 @@ body{
     margin: 65px auto;
     padding: 15px;
     border-radius: 25px;
-    box-shadow:0px 4px 15px 3px rgb(143, 143, 143);
+    box-shadow:0px 2px 12px 2px rgb(143, 143, 143);
     overflow-y: scroll;
     scrollbar-width: none;
     min-width: 50%;
@@ -119,6 +114,9 @@ body{
 .present_work::-webkit-scrollbar{
     display: none;
 }
+    .present_work h3{
+        text-align: center;
+    }
     .present_work p a{
         text-decoration: none; /*this is just to hide the link's underline*/
     }
@@ -152,10 +150,10 @@ body{
     background-color: #ab3058;
     border-radius: 20px;
     padding: 15px;
-    box-shadow:0px 4px 15px 3px rgb(50, 50, 50);
+    box-shadow:0px 2px 12px 2px rgb(50, 50, 50);
 }
     .top_squares div{
-        height: 500px;
+        height: 350px;
         width: 25%;
         max-width: 50%;
         min-width: 35%;
@@ -182,6 +180,7 @@ body{
             text-align: center;
             border-radius: 20px;
             list-style-type: none;
+            overflow-x: scroll;
         }
         .top_squares li{
             margin-right: 35px;
@@ -200,10 +199,10 @@ body{
     background-color: #0c95bb;
     border-radius: 20px;
     padding: 15px;
-    box-shadow: 0px 4px 15px 3px rgb(50, 50, 50);
+    box-shadow: 0px 2px 12px 2px rgb(50, 50, 50);
 }
     .bottom_squares div{
-        height: 500px;
+        height: 350px;
         width: 25%;
         max-width: 50%;
         min-width: 35%;
@@ -229,7 +228,8 @@ body{
             padding-top: 15px;
             text-align: center;
             border-radius: 20px;
-            list-style-type: none ;
+            list-style-type: none;
+            overflow-x: scroll;
         }
         .bottom_squares li{
             margin-right: 35px;

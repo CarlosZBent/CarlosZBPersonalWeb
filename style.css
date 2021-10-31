@@ -175,65 +175,17 @@ body{
         }
         .top_squares ul{
             background-color: rgb(250, 227, 227);
-            margin-top: 20px;
-            padding-top: 15px;
+            margin: 20px 0px;
+            padding: 15px 0px;
             text-align: center;
             border-radius: 20px;
             list-style-type: none;
             overflow-x: scroll;
         }
-        .top_squares li{
+        /* .top_squares li{
             margin-right: 35px;
-        }
+        } */
 
-/*section for the two specific info bottom squares*/
-.bottom_squares{
-    position: relative;
-    margin: 25px auto;
-    max-width: 65%;
-    min-width: auto;
-    max-height: fit-content;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    background-color: #0c95bb;
-    border-radius: 20px;
-    padding: 15px;
-    box-shadow: 0px 2px 12px 2px rgb(50, 50, 50);
-}
-    .bottom_squares div{
-        height: 350px;
-        width: 25%;
-        max-width: 50%;
-        min-width: 35%;
-        margin: 25px 15px;
-        padding: 35px;
-        background-color: white;
-        border-radius: 20px;
-        overflow-y: scroll;
-        scrollbar-width: none;
-    }
-    .bottom_squares div::-webkit-scrollbar{
-        display: none;
-    }
-        .bottom_squares h3{
-            padding: 5px;
-            background-color: rgb(250, 227, 227);
-            border-radius: 8px;
-            text-align: center;
-        }
-        .bottom_squares ul{
-            background-color: rgb(250, 227, 227);
-            margin-top: 20px;
-            padding-top: 15px;
-            text-align: center;
-            border-radius: 20px;
-            list-style-type: none;
-            overflow-x: scroll;
-        }
-        .bottom_squares li{
-            margin-right: 35px;
-        }
 /*footer section*/
 footer{
     height: 175px;

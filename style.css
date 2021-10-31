@@ -149,7 +149,6 @@ body{
     margin: auto;
     max-width: 65%;
     min-width: auto;
-    max-height: fit-content;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;

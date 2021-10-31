@@ -13,7 +13,7 @@ body{
     top: 0px;
     background-color: rgba(248, 191, 191, 0.6);
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 6px;
     overflow-x: auto;
     scrollbar-width: none;
     z-index: 1; /*to allow the banner to go over any other element*/
@@ -43,7 +43,7 @@ body{
     overflow-y: auto;
     scrollbar-width: none;
     justify-content: center;
-    margin: 5px auto;
+    margin: 15px auto;
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0px 2px 15px 2px rgb(143, 143, 143)
@@ -102,10 +102,14 @@ body{
     max-height: 144px;
     max-width: 60%;
     justify-content: center;
-    margin: 45px auto;
+    margin-left: auto;
+    margin-right: auto; /*I defined each margin separately 
+    because for some reason margin top would surpass the element above*/
+    margin-top: 60px;
+    margin-bottom: 10px;
     padding: 15px;
     border-radius: 10px;
-    box-shadow:0px 2px 15px 2px rgb(143, 143, 143);
+    box-shadow: 0px 2px 15px 2px rgb(143, 143, 143);
     overflow-y: scroll;
     scrollbar-width: none;
     min-width: 50%;
@@ -142,24 +146,22 @@ body{
 /*section for the top two squares that contain the more specific information*/
 .top_squares{
     position: relative;
-    margin: 15px auto;
+    margin: auto;
     max-width: 65%;
     min-width: auto;
     max-height: fit-content;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    /* background-color: rgb(233, 233, 233); */
     border-radius: 10px;
     padding: 15px;
-    /* box-shadow:0px 2px 15px 2px rgb(143, 143, 143); */
 }
     .top_squares div{
         height: 350px;
         width: 25%;
         max-width: 50%;
         min-width: 180px;
-        margin: 25px 15px;
+        margin: 15px 15px;
         padding: 35px;
         background-color: white;
         border-radius: 10px;
@@ -181,9 +183,8 @@ body{
             margin: 20px 0px;
             padding: 15px 0px;
             text-align: center;
-            border-radius: 10px;
+            border-radius: 8px;
             list-style-type: none;
-            overflow-x: scroll;
         }
         .top_squares a{
             color: black;

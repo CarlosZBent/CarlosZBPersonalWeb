@@ -53,7 +53,7 @@ body{
 }
     .general_info{ /*this is the div to the right. it contains the general info paragraph*/
         margin: 2px;
-        min-width: 50%;
+        min-width: 145px;
         min-height: auto;
         max-height: auto;
         max-width: 70%;
@@ -183,9 +183,9 @@ body{
             list-style-type: none;
             overflow-x: scroll;
         }
-        /* .top_squares li{
-            margin-right: 35px;
-        } */
+        .top_squares a{
+            color: black;
+        }
 
 /*footer section*/
 footer{

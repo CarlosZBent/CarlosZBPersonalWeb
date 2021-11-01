@@ -16,7 +16,7 @@ body{
     border-radius: 6px;
     overflow-x: auto;
     scrollbar-width: none;
-    z-index: 1; /*to allow the banner to go over any other element*/
+    z-index: 1; /*to allow the banner to visually go over any other element in the document flow*/
     display: flex;
     justify-content: space-evenly;
     flex-wrap: nowrap;
@@ -48,7 +48,8 @@ body{
     border-radius: 10px;
     box-shadow: 0px 2px 15px 2px rgb(143, 143, 143)
 }
-.header::-webkit-scrollbar{ /*hides the scrollbar*/
+.header::-webkit-scrollbar{ /* whenever this appears in the document it is to hide the 
+    scrollbar while mantainign it's funcionality*/
     display: none;
 }
     .general_info{ /*this is the div to the right. it contains the general info paragraph*/
@@ -60,7 +61,7 @@ body{
         overflow-y: scroll;
         scrollbar-width: none;
     }
-    .general_info::-webkit-scrollbar{ /*hides the scrollbar*/
+    .general_info::-webkit-scrollbar{
         display: none;
     }
         .infoParag{
@@ -186,7 +187,8 @@ body{
             list-style-type: none;
         }
         .top_squares a{
-            color: black;
+            color: black; /*I kept the underline to highlight that this are links, 
+            but set the color to black to make it look better*/
         }
 
 /*footer section*/
@@ -206,6 +208,5 @@ footer{
         padding: 10px;
     }
         .footer_list a{
-            text-decoration: underline;
-            color: white;
+            color: white; /*the footer is grey, so this creates better contrast*/
         }

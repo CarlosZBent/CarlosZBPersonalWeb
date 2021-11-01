@@ -1,4 +1,3 @@
-tenue sombra detr�s del info paragraph - DONE
+tenue sombra detras del info paragraph - DONE
 
-Mejorar accesibilidad
-english spanish switch
+Mejorar accesibilidad - DONE

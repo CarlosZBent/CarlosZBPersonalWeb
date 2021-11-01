@@ -197,15 +197,15 @@ footer{
 }
     footer h3{
         text-align: center;
-        color: rgb(250, 227, 227);
+        color: white;
     }
 
     .footer_list li{
-        color: rgb(250, 227, 227);
+        color: white;
         display: inline-block;
         padding: 10px;
     }
         .footer_list a{
             text-decoration: underline;
-            color: rgb(250, 227, 227);
+            color: white;
         }

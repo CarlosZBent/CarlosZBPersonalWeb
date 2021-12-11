@@ -12,35 +12,6 @@ body{
 
 /*##############################################################################*/
 
-.sticky_banner{ /*banner with some options that the user can see all the time while scrolling*/
-    position: sticky;
-    height: 25px;
-    max-width: 20%;
-    min-width: 40%;
-    margin: 5px auto;
-    top: 0px;
-    background-color: rgba(248, 191, 191, 0.6);
-    padding: 10px;
-    border-radius: 6px;
-    overflow-x: auto;
-    scrollbar-width: none;
-    z-index: 1; /*to allow the banner to visually go over any other element in the document flow*/
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: nowrap;
-}
-.sticky_banner::-webkit-scrollbar{ /*hides the scrollbar*/
-    display: none;  
-}
-    .sticky_banner img{
-        display: inline-block;
-        height: 25px;
-        width: 25px;
-    }
-    .sticky_banner img a{
-        text-decoration: none;   
-    }
-
 /*Header section. It's a large div that contains other two divs*/
 .header{ 
     position: relative;
@@ -215,24 +186,4 @@ body{
         .top_squares a{
             color: black; /*I kept the underline to highlight that this are links, 
             but set the color to black to make it look better*/
-        }
-
-/*footer section*/
-footer{
-    height: 175px;
-    background-color: rgb(44, 46, 48);
-    overflow-y: scroll;
-}
-    footer h3{
-        text-align: center;
-        color: white;
-    }
-
-    .footer_list li{
-        color: white;
-        display: inline-block;
-        padding: 10px;
-    }
-        .footer_list a{
-            color: white; /*the footer is grey, so this creates better contrast*/
         }

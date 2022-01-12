@@ -181,3 +181,38 @@ body{
             color: black; /*I kept the underline to highlight that this are links, 
             but set the color to black to make it look better*/
         }
+/* Plan todo project section */
+.PT_section {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    max-height: 750px;
+    width: 50%;
+    overflow-y: auto;
+    scrollbar-width: none;
+    justify-content: center;
+    margin: 15px auto;
+    padding-top: 10px;
+    border-radius: 10px;
+    background-color: white;
+}
+@media (max-width: 600px){
+    .header{
+        width: 90%;
+    }
+} 
+.header::-webkit-scrollbar{ /* whenever this appears in the document it is to hide the 
+    scrollbar while mantainign it's funcionality*/
+    display: none;
+}
+    .PT_heading{
+        text-align: center;
+    }
+    .PT_img {
+        border-radius: 10px;
+        max-width: 90%;
+        max-height: 45%;
+        margin: 7px auto;
+    }
+    

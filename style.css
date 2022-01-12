@@ -181,6 +181,10 @@ body{
             color: black; /*I kept the underline to highlight that this are links, 
             but set the color to black to make it look better*/
         }
+
+.Project_section_header {
+    text-align: center;
+}
 /* Plan todo project section */
 .PT_section {
     position: relative;

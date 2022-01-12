@@ -202,14 +202,10 @@ body{
     background-color: white;
 }
 @media (max-width: 600px){
-    .header{
+    .PT_section{
         width: 90%;
     }
 } 
-.header::-webkit-scrollbar{ /* whenever this appears in the document it is to hide the 
-    scrollbar while mantainign it's funcionality*/
-    display: none;
-}
     .PT_heading{
         text-align: center;
     }

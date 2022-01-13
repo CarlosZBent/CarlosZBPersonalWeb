@@ -2,14 +2,7 @@
 body{
     font-family: Ebrima, Calibri, Consolas, 'Times New Roman', sans-serif;
     background-color: #b4d1e1;
-    /*background-image: url('code-closeup.jpg');
-    background-repeat: no-repeat;
-    background-size: cover ;*/
 }
-
-/* .top_squares div, .header, .present_work{
-    box-shadow: 0px 3px 6px 6px #202020;
-}  */
 
 /*##############################################################################*/
 
@@ -188,3 +181,38 @@ body{
             color: black; /*I kept the underline to highlight that this are links, 
             but set the color to black to make it look better*/
         }
+
+.Project_section_header {
+    text-align: center;
+}
+/* Plan todo project section */
+.PT_section {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    max-height: 750px;
+    width: 50%;
+    overflow-y: auto;
+    scrollbar-width: none;
+    justify-content: center;
+    margin: 15px auto;
+    padding-top: 10px;
+    border-radius: 10px;
+    background-color: white;
+}
+@media (max-width: 600px){
+    .PT_section{
+        width: 90%;
+    }
+} 
+    .PT_heading{
+        text-align: center;
+    }
+    .PT_img {
+        border-radius: 10px;
+        max-width: 90%;
+        max-height: 45%;
+        margin: 7px auto;
+    }
+    

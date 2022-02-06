@@ -18,7 +18,7 @@ body{
     overflow-y: auto;
     scrollbar-width: none;
     justify-content: center;
-    margin: 15px auto;
+    margin: 5px auto;
     padding-top: 10px;
     border-radius: 10px;
     background-color: white;
@@ -85,8 +85,8 @@ body{
     margin-left: auto;
     margin-right: auto; /*I defined each margin separately 
     because for some reason margin top would surpass the element above*/
-    margin-top: 60px;
-    margin-bottom: 10px;
+    margin-top: 30px;
+    margin-bottom: 20px;
     padding: 0px;
     border-radius: 10px;
     overflow-y: scroll;
@@ -142,7 +142,7 @@ body{
     overflow-y: auto;
     scrollbar-width: none;
     justify-content: center;
-    margin: 25px auto;
+    margin: 5px auto;
     padding-top: 10px;
     border-radius: 10px;
     background-color: white;
@@ -166,7 +166,7 @@ body{
 /*section for the top two squares that contain the more specific information*/
 .top_squares{
     position: relative;
-    margin: auto;
+    margin: 5px auto;
     max-width: 50%;
     min-width: auto;
     display: flex;
@@ -178,7 +178,7 @@ body{
     .top_squares div{
         width: 45%;
         max-height: 510px;
-        margin: 15px 5px;
+        margin: 5px 5px;
         padding: 10px 5px;
         background-color: white;
         border-radius: 10px;

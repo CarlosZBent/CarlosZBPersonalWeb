@@ -194,7 +194,9 @@ h1, h2, h3 {
         grid-template-areas: "header header header";
     }
         .skillsItems {
-            border: 1px solid black;
+            /* border: 1px solid black; */
+            border-radius: 10%;
+            background-color: #f5f5f5;
             display: flex;
             align-items: center;
             justify-items: center;
@@ -209,6 +211,12 @@ h1, h2, h3 {
             .skillsItems img {
                 height: 50%;
                 width: 50%;
+            }
+
+            .socialMediaLogo img {
+                display: inline;
+                height: 10px;
+                width: 10px;
             }
 
     .top_squares div{

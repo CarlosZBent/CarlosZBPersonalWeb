@@ -184,6 +184,26 @@ h1, h2, h3 {
     border-radius: 10px;
     padding: 15px;
 }   
+
+    .skillsContainer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat (3, 1fr);
+        justify-items: center;
+        height: fit-content;
+        grid-template-areas: "header header header";
+    }
+        .skillsItems {
+            border: 1px solid black;
+            display: inline;
+            height: 100px;
+            width: 100px;
+            text-align: center;
+        }
+            .skillsContainer h3 {
+                grid-area: header;
+            }
+
     .top_squares div{
         width: 45%;
         max-height: 510px;

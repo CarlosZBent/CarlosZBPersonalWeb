@@ -195,13 +195,20 @@ h1, h2, h3 {
     }
         .skillsItems {
             border: 1px solid black;
-            display: inline;
+            display: flex;
+            align-items: center;
+            justify-items: center;
+            flex-direction: column;
             height: 100px;
             width: 100px;
             text-align: center;
         }
             .skillsContainer h3 {
                 grid-area: header;
+            }
+            .skillsItems img {
+                height: 50%;
+                width: 50%;
             }
 
     .top_squares div{

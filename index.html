@@ -33,90 +33,130 @@
     <title>Carlos Z. Bent's personal website</title>
     <link rel="stylesheet" href="style.css">
 </head>
-    <body>
-        <!-- here starts the header section. it's formed by a parent div and two child divs that contain the info paragraph and the picture -->
-        <div class="header">
-            <div class="photoDiv">
-                <img class='my_photo' src="img/Imagen 4.3.jpg" alt="Imagen de Carlos Bent">
-            </div>
-            <div class="general_info">
-                <p class="infoParag">
-                    Hello, and welcome. My name is Carlos Zaldívar Bent. I'm a programmer and writer 
-                    from Cuba specialized in Web Development and Python.  
-                </p>
-            </div>
-        </div>
-        <!-- end of the header section -->
+<body>
+    <div class="banner"> <!--TOP OF THE PAGE BANNER-->
+        <img class="image" src="img/bw_round.png" alt="CarlosZBent's image">
+    </div>
 
-        <!-- beggining of the section that shows my current work status -->
-        <div class="present_work">
-            <p>
-                I'm currently working on my own personal projects and as a freelancer,
-                also regularly writing tech and programming related articles for <a href='https://www.kwelta.tech' target='_blank'>kwelta.tech</a> 
-                and <a href="http://saasradar.net" target='_blank'>saasradar.net</a>.
-            </p>
-        </div>
+    <h1 class="mainHeader">
+        Carlos Z. Bent
+    </h1>
 
+    <h3 class="shortBioHeader">
+        Full-stack web developer and writer
+    </h3>
+
+    <div class="mainContainer"> <!--CONTAINER FOR THE MAIN CLICKABLE ELEMENTS-->
+       
+        <h3 class="clickableItem" id="aboutMeHeader" 
+        onclick="showOverlay(aboutMePage, aboutMeContainer)" >
+            👨‍💻 All you need to know about me
+        </h3> 
         
-        <!-- beggining of the content section-->
-        <div class="top_squares"> <!-- this div contains two ohter divs with info about me-->
-            <div class="skillsContainer" > <!-- div to display a list of my skills -->
-                <h3>My skillset</h3>
-                <span class="skillsItems">
-                    <img src="icons/bootstrap.png" alt="">
-                    Bootstrap
-                </span>
-                <span class="skillsItems">
-                    <img src="icons/react.png" alt="">
-                    React
-                </span>
-                <span class="skillsItems">
-                    <img src="icons/jquery.png" alt="">
-                    jQuery
-                </span>
-                <span class="skillsItems">
-                    <img src="icons/django.png" alt="">
-                    Django
-                </span>
-                <span class="skillsItems">
-                    <img src="icons/ptb.png" alt="">
-                    Telegram Bot
-                </span>
-                <span class="skillsItems">
-                    <img src="icons/postgres.png" alt="">
-                    PostgreSQL
-                </span>
-            </div>
-            <div class="contactsContainer" > <!-- div with a list of ways to reach out to me -->
-                <h3>Let's get in touch</h3>
-                <ul> 
-                    <li> Send me an <a href="mailto:bentsoft365@gmail.com"> e-mail <!-- <img src="" alt=""> --> </a> </li><br>
-                    <li> Come to my <a href='https://t.me/carloszbent_channel' target='_blank'> Telegram channel <!-- <img class="socialMediaLogo" src="icons/telegram.png" alt=""> --> </a> </li><br>
-                    <li> DM me on <a href='https://www.twitter.com/CarlosZBent' target='_blank'> Twitter <!-- <img class="socialMediaLogo" src="icons/twitter.png" alt=""> --> </a> </li><br>
-                </ul>    
-            </div>
-        </div>
-        <!-- <h2 class="Project_section_header"> Some of my projects </h2>
-        <div class='PT_section' >
-            <a style="text-decoration: none; color: unset;" href="https://fancyxt.xyz" target="_blank"> 
-                <h3 class="PT_heading"> fancyxt.xyz </h3> 
-            </a>
-            <img class="PT_img" src="img/Fancyxt_img.jpg" alt="screenshot of my webapp called Fancyxt"> 
-            <p class="infoParag">
-                Some time ago I found a little gem on Product Hunt called <a style="text-decoration: none;" href="https://pika.rishimohan.me/" target="_blank">Pika</a>,
-                I loved it and still do. But I got to the point where I wanted to use it for text too. 
-                So I built <a style="text-decoration: none;" href="https://fancyxt.xyz" target="_blank"> fancyxt.xyz</a>.
+        <h3 class="clickableItem" id="currentWorkHeader" 
+        onclick="showOverlay(currentWorkPage, currentWorkContainer)" >
+            🧠 This is what I'm working on right now
+        </h3>
+        <h3 class="clickableItem" id="followMeHeader" 
+        onclick="showOverlay(followMePage, followMeContainer)" >
+            🤝 Keep up with me
+        </h3>
+        <h3 class="clickableItem" id="contactMeHeader" 
+        onclick="showOverlay(contactMePage, contactMeContainer)" >
+            💌 Let's get in touch
+        </h3>
+    </div>
+    <div class="overlay" id="aboutMeContainer" >
+        <div class="infoPage" id="aboutMePage">
+            <h3>
+                About Me
+            </h3>
+            <button class="closePageButton" id="closeAboutMePageButton" 
+            onclick="closeOverlay(aboutMePage, aboutMeContainer)">Close</button>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur nobis, eius consequatur voluptatem atque provident, beatae, reiciendis quod veritatis quas facere exercitationem ut? Suscipit consequatur asperiores non ratione! Ipsum, voluptatum.
+                Nobis iure consequuntur dolor in sapiente quod accusamus quidem quo natus eveniet enim quibusdam, omnis libero, vitae soluta cupiditate harum facere beatae modi debitis necessitatibus vel culpa consequatur nesciunt. Ipsam.
+                Repudiandae praesentium labore sint libero ad eligendi, quidem, laudantium repellendus consequuntur accusantium iure nesciunt voluptatum ut cupiditate tempora laborum dicta officia, odio tenetur aut obcaecati rem nisi quod! Eos, temporibus.
             </p>
         </div>
-        <div class='PT_section' >
-            <a style="text-decoration: none; color: unset;" href="https://plan-todo.com" target="_blank"> 
-                <h3 class="PT_heading"> plan-todo.com </h3> 
-            </a>
-            <img class="PT_img" src="img/PT_img.png" alt="screenshot of my webapp called Plan-todo"> 
-            <p class="infoParag">
-                I am constantly very concerned with improving my productivity. For that I read "Getting things done", 
-                and from it I got the idea to build <a style="text-decoration: none;" href="https://plan-todo.com" target="_blank"> plan-todo.com</a>.
+    </div>
+    <div class="overlay" id="currentWorkContainer" >
+        <div class="infoPage" id="currentWorkPage">
+            <h3>
+                Current Work
+            </h3>
+            <button class="closePageButton" id="closeCurrentWorkPageButton" 
+            onclick="closeOverlay(currentWorkPage, currentWorkContainer)">Close</button>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur nobis, eius consequatur voluptatem atque provident, beatae, reiciendis quod veritatis quas facere exercitationem ut? Suscipit consequatur asperiores non ratione! Ipsum, voluptatum.
+                Nobis iure consequuntur dolor in sapiente quod accusamus quidem quo natus eveniet enim quibusdam, omnis libero, vitae soluta cupiditate harum facere beatae modi debitis necessitatibus vel culpa consequatur nesciunt. Ipsam.
+                Repudiandae praesentium labore sint libero ad eligendi, quidem, laudantium repellendus consequuntur accusantium iure nesciunt voluptatum ut cupiditate tempora laborum dicta officia, odio tenetur aut obcaecati rem nisi quod! Eos, temporibus.
             </p>
-        </div> -->
-       </body>
+        </div>
+    </div>
+    <div class="overlay" id="followMeContainer" >
+        <div class="infoPage" id="followMePage">
+            <h3>
+                Follow me
+            </h3>
+            <button class="closePageButton" id="closeFollowMePageButton" 
+            onclick="closeOverlay(followMePage, followMeContainer)">Close</button>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur nobis, eius consequatur voluptatem atque provident, beatae, reiciendis quod veritatis quas facere exercitationem ut? Suscipit consequatur asperiores non ratione! Ipsum, voluptatum.
+                Nobis iure consequuntur dolor in sapiente quod accusamus quidem quo natus eveniet enim quibusdam, omnis libero, vitae soluta cupiditate harum facere beatae modi debitis necessitatibus vel culpa consequatur nesciunt. Ipsam.
+                Repudiandae praesentium labore sint libero ad eligendi, quidem, laudantium repellendus consequuntur accusantium iure nesciunt voluptatum ut cupiditate tempora laborum dicta officia, odio tenetur aut obcaecati rem nisi quod! Eos, temporibus.
+            </p>
+        </div>
+    </div>
+    <div class="overlay" id="contactMeContainer" >
+        <div class="infoPage" id="contactMePage">
+            <h3>
+                Contact Me
+            </h3>
+            <button class="closePageButton" id="closeContactMePageButton" 
+            onclick="closeOverlay(contactMePage, contactMeContainer)">Close</button>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur nobis, eius consequatur voluptatem atque provident, beatae, reiciendis quod veritatis quas facere exercitationem ut? Suscipit consequatur asperiores non ratione! Ipsum, voluptatum.
+                Nobis iure consequuntur dolor in sapiente quod accusamus quidem quo natus eveniet enim quibusdam, omnis libero, vitae soluta cupiditate harum facere beatae modi debitis necessitatibus vel culpa consequatur nesciunt. Ipsam.
+                Repudiandae praesentium labore sint libero ad eligendi, quidem, laudantium repellendus consequuntur accusantium iure nesciunt voluptatum ut cupiditate tempora laborum dicta officia, odio tenetur aut obcaecati rem nisi quod! Eos, temporibus.
+            </p>
+        </div>
+    </div>
+
+    <div class="newsletterContainer"> <!--CONTAINER FOR ALL THE NEWSLETTER RELATED ELEMENTS-->
+        <h3 class="newsletterHeader">
+            Best way to keep up with my stuff is my newsletter👇:
+        </h3>
+        <h2 class="newsletterHeader2">
+            <a class="newsletterLink" href="https://www.getrevue.co/profile/carloszbent" target="_blank">
+                📧 The Productive Grind Newsletter 📧
+            </a>
+        </h2>
+        <div class="revue-embed">
+            <form class="revue-form-container" action="https://www.getrevue.co/profile/carloszbent/add_subscriber" method="post" id="revue-form" name="revue-form"  target="_blank">
+                <h3 class="revue-embed-header">
+                    Leave your data here and click subscribe and you'll be on board 🎉
+                </h3>
+                <div class="revue-form-group">
+                    <label class="revue-form-label" for="member_email">Email address</label>
+                    <input class="revue-form-field" placeholder="arthurmorgan@westmail.com" type="email" name="member[email]" id="member_email">
+                </div>
+                <div class="revue-form-group">
+                    <label class="revue-form-label" for="member_first_name">First name <span class="optional">(Optional)</span></label>
+                    <input class="revue-form-field" placeholder="Arthur" type="text" name="member[first_name]" id="member_first_name">
+                </div>
+                <div class="revue-form-group">
+                    <label class="revue-form-label" for="member_last_name">Last name <span class="optional">(Optional)</span></label>
+                    <input class="revue-form-field" placeholder="Morgan" type="text" name="member[last_name]" id="member_last_name">
+                </div>
+                    <div class="revue-form-actions">
+                    <input class="revue-subscribe-button" type="submit" value="Subscribe" name="member[subscribe]" id="member_submit">
+                </div>
+                <div class="revue-form-footer">By subscribing, you agree with Revue’s <a target="_blank" href="https://www.getrevue.co/terms">Terms of Service</a> and <a target="_blank" href="https://www.getrevue.co/privacy">Privacy Policy</a>.</div>
+            </form>
+        </div>
+
+    </div>
+</body>
+<script src="script.js"></script>
 </html>

@@ -1,0 +1,267 @@
+/*Global styles*/
+body{
+    font-family: 'Segoe UI', Ebrima, Calibri, sans-serif;
+    background-color: #f5f5f5;
+    font-weight: 350;
+}
+h1, h2, h3 {
+    font-weight:normal;
+}
+
+/*##############################################################################*/
+
+/*Header section. It's a large div that contains other two divs*/
+.header{ 
+    position: relative;
+    top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    max-height: 750px;
+    width: 50%;
+    overflow-y: auto;
+    scrollbar-width: none;
+    justify-content: center;
+    margin: 5px auto;
+    padding-top: 10px;
+    border-radius: 10px;
+    background-color: white;
+}
+@media (max-width: 700px){
+    .header{
+        width: 75%;
+    }
+} 
+@media (max-width: 500px){
+    .header{
+        width: 90%;
+    }
+} 
+.header::-webkit-scrollbar{ /* whenever this appears in the document it is to hide the 
+    scrollbar while mantainign it's funcionality*/
+    display: none;
+}
+    .general_info{ /*this is the div to the right. it contains the general info paragraph*/
+        margin: 2px;
+        min-width: 185px;
+        min-height: auto;
+        max-height: auto;
+        max-width: 100%;
+        overflow-y: scroll;
+        scrollbar-width: none;
+    }
+    @media (min-width: 1100px){
+        .general_info{
+            width: 60%;
+        }
+    } 
+    .general_info::-webkit-scrollbar{
+        display: none;
+    }
+        .infoParag{
+            display: inline-block;
+            text-align: justify;
+            min-width: auto;
+            min-height: auto;
+            max-height: fit-content;
+            margin-right: 15px;
+            margin-left: 15px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+    .photoDiv{ /*this is the div to the left. it only contains the picture*/
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 2px;
+        min-width: 197px;
+        max-width: fit-content;
+        min-height: auto;
+        max-height: fit-content;
+    }
+        .my_photo{
+            position: relative;
+            border-radius: 10px;
+            /* min-width: 157px; */
+            max-height: 157px;
+        }
+/*##############################################################################*/
+
+/*this is the div that contains the paragraph with present-work information*/
+.present_work{
+    position: relative;
+    display: flex;
+    max-height: 320px;
+    width: 50%;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto; /*I defined each margin separately 
+    because for some reason margin top would surpass the element above*/
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding: 0px;
+    border-radius: 10px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    min-width: 50%;
+    min-height: auto;
+    background-color: white;
+}
+@media (max-width: 700px){
+    .present_work{
+        width: 75%;
+    }
+} 
+@media (max-width: 500px){
+    .present_work{
+        width: 90%;
+    }
+} 
+.present_work::-webkit-scrollbar{
+    display: none;
+}
+    .present_work h3{
+        text-align: center;
+    }
+    .present_work p a{
+        text-decoration: none; /*this is just to hide the link's underline*/
+    }
+    .present_work p{
+        display: inline-block;
+        text-align: justify;
+        min-width: auto;
+        min-height: auto;
+        max-height: 250px;
+        margin-right: 15px;
+        margin-left: 15px;
+        padding: 10px;
+        overflow-y: scroll;
+        border-radius: 10px;
+        scrollbar-width: none;
+    }
+    .present_work p::-webkit-scrollbar{
+        display: none;
+    }
+/*##############################################################################*/
+
+
+/*##############################################################################*/
+/*section for the top two squares that contain the more specific information*/
+.top_squares{
+    position: relative;
+    margin: 5px auto;
+    max-width: 50%;
+    min-width: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    padding: 15px;
+}   
+
+.skillsContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat (3, 1fr);
+    justify-items: center;
+    height: fit-content;
+    min-width: fit-content;
+    grid-template-areas: "header header header";
+    }
+        .skillsItems {
+            /* border: 1px solid black; */
+            border-radius: 10px;
+            background-color: #f5f5f5;
+            display: flex;
+            align-items: center;
+            justify-items: center;
+            flex-direction: column;
+            height: 100px;
+            width: 100px;
+            text-align: center;
+            margin: 5px;
+            font-weight: initial;
+            padding-top: 15px;
+            padding-bottom: 5px;
+        }
+            .skillsContainer h3 {
+                grid-area: header;
+            }
+            .skillsItems img {
+                height: 50%;
+                width: 50%;
+                padding: 5px;
+            }
+
+            .socialMediaLogo img {
+                display: inline;
+                height: 10px;
+                width: 10px;
+            }
+
+    .contactsContainer {
+        min-width: 330px;
+    }
+
+        .top_squares div{ /*generic styles for 'top squares'*/
+        width: 45%;
+        max-height: 510px;
+        margin: 5px 5px;
+        padding: 10px 5px;
+        background-color: white;
+        border-radius: 10px;
+        overflow-y: scroll;
+        scrollbar-width: none;
+    }
+  
+@media (max-width: 1500px) {
+    .top_squares div {
+        min-width: 100%;
+    }
+    .skillsItems {
+        margin: 20px 0px;
+    }
+}
+
+
+@media (max-width: 800px){
+    .top_squares div{
+        width: 100%;
+    }
+}
+
+@media (max-width: 700px){
+    .top_squares{
+        max-width: 75%;
+    }
+}
+
+@media (max-width: 500px){
+    .top_squares{
+        max-width: 90%;
+    }
+    .skillsItems {
+        margin: 5px 5px;
+    }
+}
+
+    .top_squares div::-webkit-scrollbar{
+        display: none;
+    }
+        .top_squares h3{
+            padding: 5px;
+            border-radius: 6px;
+            text-align: center;
+        }
+        .top_squares ul{
+            margin: 20px 0px;
+            padding: 15px 0px;
+            text-align: center;
+            border-radius: 8px;
+            list-style-type: none;
+        }
+        .top_squares a{
+            text-decoration: none;
+        }

@@ -12,6 +12,8 @@ let currentWorkPage = document.getElementById('currentWorkPage');
 let followMePage = document.getElementById('followMePage');
 let contactMePage = document.getElementById('contactMePage');
 
+let subscribeButton = document.getElementById('member_submit');
+
 const showOverlay = function (page, container) {
     page.style.display = 'grid';
     container.style.display = 'block';
@@ -28,4 +30,13 @@ const closeOverlay = function (page, container) {
     page.style.display = 'none';
     container.style.display = 'none';
     console.log(container.style.display);
+}
+
+subscribeButton.onmouseover = () => {
+  subscribeButton.classList += ' vibrate-1';
+  subscribeButton.addEventListener('animationend', () => {
+    console.log('animation ended!!!')
+    subscribeButton.className = 'revue-subscribe-button';
+    console.log('removed');
+  })
 }

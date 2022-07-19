@@ -5,6 +5,9 @@
 body {
     font-family: Inconsolata;
 }
+a {
+    color: #000;
+}
 /*BIG BANNER THAT CONTAINS THE PICTURE*/
 .banner {
     width: 100%;
@@ -87,7 +90,7 @@ body {
             padding: 25px;
         }
         .overlay p {
-            font-size: 15px;
+            font-size: 20px;
             color: #3d3a3a;
             text-align: justify;
         }
@@ -149,6 +152,19 @@ body {
             }
             .infoPage p {
                 grid-area: content;
+            }
+            .infoPage ul {
+                grid-area: content;
+                font-size: 20px;
+                list-style-type: none;
+                display: grid;
+                grid-template-columns:repeat(2, 1fr);
+                grid-template-rows: repeat(3, 1fr);
+                width: 100%;
+            }
+            .infoPage li {
+                margin: 10px;
+                text-align: initial;
             }
 /*CONTAINER FOR THE NEWSLETTER ELEMENTS*/
 .newsletterContainer  {

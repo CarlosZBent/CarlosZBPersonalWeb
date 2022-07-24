@@ -159,8 +159,8 @@ a {
                 list-style-type: none;
                 display: grid;
                 grid-template-columns:repeat(2, 1fr);
-                grid-template-rows: repeat(3, 1fr);
-                width: 100%;
+                grid-template-rows: repeat(2, 1fr);
+                width: fit-content;
             }
             .infoPage li {
                 margin: 10px;
@@ -248,6 +248,15 @@ a {
                 }
                 .revue-subscribe-button:hover {
                     font-size: 23px;
+                }
+                @media (max-width:360px) {
+                    .revue-subscribe-button {
+                        font-size: .8rem;
+                        height: 80%;
+                    }
+                    .revue-subscribe-button:hover {
+                        font-size: .8rem;
+                    }
                 }
                 .vibrate-1 {
                     -webkit-animation: vibrate-1 0.3s linear 7 both;

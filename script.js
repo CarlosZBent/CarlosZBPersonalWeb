@@ -1,4 +1,4 @@
-console.log('js');
+// console.log('js');
 
 let infoPages = document.getElementsByClassName('infoPage');
 
@@ -29,14 +29,11 @@ document.onclick = function(event){
 const closeOverlay = function (page, container) {
     page.style.display = 'none';
     container.style.display = 'none';
-    console.log(container.style.display);
 }
 
 subscribeButton.onmouseover = () => {
   subscribeButton.classList += ' vibrate-1';
   subscribeButton.addEventListener('animationend', () => {
-    console.log('animation ended!!!')
     subscribeButton.className = 'revue-subscribe-button';
-    console.log('removed');
   })
 }

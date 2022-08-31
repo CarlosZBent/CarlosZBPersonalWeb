@@ -259,8 +259,8 @@ a {
                     }
                 }
                 .vibrate-1 {
-                    -webkit-animation: vibrate-1 0.3s linear 7 both;
-                            animation: vibrate-1 0.3s linear 7 both;
+                    -webkit-animation: vibrate-1 0.5s linear 7 both;
+                            animation: vibrate-1 0.5s linear 7 both;
                 }
                 .revue-form-footer {
                     font-size: small;

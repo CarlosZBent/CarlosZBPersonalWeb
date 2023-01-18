@@ -184,4 +184,8 @@ a {
         box-shadow: 0px 4px 8px 2px #cfcfcf;
         margin-bottom: 4rem;
         margin-top: 1rem;
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 60%;
+        min-width:35%;
     }
